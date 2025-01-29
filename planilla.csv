@@ -1,0 +1,3 @@
+,ruta_archivoX = 'datos.xlsx'
+0,tabla = pd.read_excel(ruta_archivoX)
+1,tabla

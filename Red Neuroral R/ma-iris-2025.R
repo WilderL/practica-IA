@@ -31,3 +31,12 @@ decodificarCol = apply(prediccion, 1, which.max)
 codificado = data_frame(decodificarCol)
 codificado = mutate(codificado, especie=recode(codificado$decodificarCol, "1"="Setosa", "2"="Versicolor", "3"="Virginica"))
 test$Especie.Pred = codificado$especie
+# PESO DE NEURONAS
+red.neuronal$weights
+red.neuronal$weights[[1]][[1]]
+# Linea para tener en la portapapela en Windows                          
+writeClipboard(red.neuronal$weights[[1]][[1]])
+
+red.neuronal$weights[[1]][[2]]
+red.neuronal$weights[[1]][[3]]                          
+                          
